@@ -12,4 +12,11 @@ return require('packer').startup(function(use)
 		},
 		tag = 'nightly'
 	}
+
+	use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+
+	use { "williamboman/nvim-lsp-installer", "neovim/nvim-lspconfig" }
 end)
