@@ -22,8 +22,6 @@ vim.api.nvim_set_keymap("n", "ti", "<C-]>zz", {silent = true, noremap = true})
 vim.api.nvim_set_keymap("n", "tw", "<C-w>w", {silent = true, noremap = true})
 -- quickly jump the bottom
 vim.api.nvim_set_keymap("n", "tg", "G", {silent = true, noremap = true})
--- quickly jump the bottom
-vim.api.nvim_set_keymap("n", "t;", ":", {silent = true, noremap = true})
 
 -- Enable to copy character to the system clipboard
 if vim.fn.has('wsl') then

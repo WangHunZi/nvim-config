@@ -1,6 +1,17 @@
-# About
-My personal nvim configuration file.
+# 关于
+个人的NVIM配置。
+- 代码高亮
+- 自动补全
+- 主题、文件树、多标签、状态栏
 
-# others
-wait to impelement.
-
+# 快捷键
+`jk`  退出
+`ntg` 打开或者关闭文件树
+`tw`  切换到文件树
+`tx`  快捷关闭其他标签栏
+`th`  切换左标签
+`tl`  切换右标签
+`to`  函数跳转后切换回来
+`tt`  函数跳转后切换回来
+`ti`  转到函数定义处
+`tg`  转到文件底部

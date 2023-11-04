@@ -11,7 +11,7 @@ vim.api.nvim_set_keymap("n", "t6", ":BufferLineGoToBuffer 6<CR>", {noremap = tru
 vim.api.nvim_set_keymap("n", "t7", ":BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "t8", ":BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "t9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "tbg", ":BufferLinePick", {noremap = true, silent = true})
 
+vim.api.nvim_set_keymap("n", "tx", ":BufferLineCloseOthers<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "th", ":BufferLineCycleNext<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "tl", ":BufferLineCyclePrev<CR>", {noremap = true, silent = true})

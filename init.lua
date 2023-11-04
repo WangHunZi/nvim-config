@@ -9,3 +9,4 @@ require("plugins/bufferline")
 require("plugins/nvim-treesitter")
 require("plugins/lsp")
 require("plugins/cmp")
+

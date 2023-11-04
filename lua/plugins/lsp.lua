@@ -10,17 +10,17 @@ require("mason").setup({
 
 require("mason-lspconfig").setup {
     ensure_installed = {
-		"pyright", "clangd", "cssls", "html", "cmake", "lua_ls", "rust_analyzer"
+		"grammarly", "bashls", "pyright", "clangd", "cssls", "html", "cmake", "lua_ls", "rust_analyzer"
 	},
 }
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require("lspconfig").cmake.setup {
+require("lspconfig").grammarly.setup {
 	capabilities = capabilities,
 }
 
-require("lspconfig").cssls.setup {
+require("lspconfig").bashls.setup {
 	capabilities = capabilities,
 }
 
@@ -47,3 +47,13 @@ require("lspconfig").html.setup {
 require("lspconfig").rust_analyzer.setup {
 	capabilities = capabilities,
 }
+
+require("lspconfig").cmake.setup {
+	capabilities = capabilities,
+}
+
+require("lspconfig").cssls.setup {
+	capabilities = capabilities,
+}
+
+
