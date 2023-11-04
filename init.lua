@@ -7,6 +7,7 @@ require("plugins/theme_vscode")
 require("plugins/lualine")
 require("plugins/bufferline")
 require("plugins/nvim-treesitter")
+require("plugins/toggleterm")
 require("plugins/lsp")
 require("plugins/cmp")
 
