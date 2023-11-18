@@ -1,35 +1,20 @@
-local opt = vim.o
-local cmd = vim.cmd
+vim.g.mapleader = " "
 
--- Set delete the any chatacter during the insert mode
-opt.backspace = "indent,eol,start"
+local keymap = vim.keymap
 
--- Blink the cursor
-cmd([[set guicursor+=a:blinkon100]])
+keymap.set("i", "ii", "<Esc>")
 
--- Do not copy line numbers
-vim.api.nvim_set_option("mouse", "a")
+keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
 
--- change the mode form `insert` to `normal`
-vim.api.nvim_set_keymap("i", "jk", "<esc>", {silent = true, noremap = true})
--- disable the Ctrl + [
-vim.api.nvim_set_keymap("i", "<C-[>", "<nop>", {silent = true, noremap = true})
--- quickly come back
-vim.api.nvim_set_keymap("n", "tt", "<C-t>zz", {silent = true, noremap = true})
--- quickly step in
-vim.api.nvim_set_keymap("n", "ti", "<C-]>zz", {silent = true, noremap = true})
--- quickly change window
-vim.api.nvim_set_keymap("n", "tw", "<C-w>w", {silent = true, noremap = true})
--- quickly jump the bottom
-vim.api.nvim_set_keymap("n", "tg", "G", {silent = true, noremap = true})
+keymap.set("n", "<leader>x", ":BufferLinePickClose<cr>")
+keymap.set("n", "<leader>l", ":BufferLineCycleNext<cr>")
+keymap.set("n", "<leader>h", ":BufferLineCyclePrev<cr>")
 
--- Enable to copy character to the system clipboard
-if vim.fn.has('wsl') then
-  vim.cmd [[
-	  augroup Yank
-	  autocmd!
-	  autocmd TextYankPost * :call system('/mnt/c/windows/system32/clip.exe ',@")
-	  augroup END
-  ]]
-end
+keymap.set("n", "<leader>w", "<C-w>k")
+keymap.set("n", "<leader>a", "<C-w>h")
+keymap.set("n", "<leader>s", "<C-w>j")
+keymap.set("n", "<leader>d", "<C-w>l")
 
+keymap.set("n", "<leader>i", "<C-]>zz")
+keymap.set("n", "<leader>t", "<C-t>zz")
+keymap.set("n", "<leader>o", "<C-o>zz")

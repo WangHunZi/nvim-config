@@ -1,5 +1,6 @@
-require("core/basic")
 require("core/keymaps")
+require("core/options")
+require("core/colorscheme")
 
 require("plugins/packer")
 require("plugins/nvim-tree")
@@ -10,4 +11,3 @@ require("plugins/nvim-treesitter")
 require("plugins/toggleterm")
 require("plugins/lsp")
 require("plugins/cmp")
-
